@@ -126,6 +126,18 @@ body,
     background-color: $background-color_secondary__page;
 }
 
+.input-container {
+    margin: 1em auto;
+    padding: 0.6em 1em;
+    background-color: hsla(34, 45%, 60%, 1.00);
+}
+
+.worker-result {
+    font-size: 2em;
+    color: hsla(253, 100%, 32%, 1);
+}
+
+
 .content-wrapper {
     padding: $padding-wrapper_default;
 }
