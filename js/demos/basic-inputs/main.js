@@ -8,7 +8,7 @@ if (window.Worker) {
         workerResult = document.querySelector('.worker-result.math');
 
 
-    var mainWorker = new Worker('js/worker.js');
+    var mainWorker = new Worker('js/demos/basic-inputs/worker.js');
 
     mainWorker.onmessage = function (e) {
         workerResult.textContent = e.data;

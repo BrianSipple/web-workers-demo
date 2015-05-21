@@ -108,55 +108,30 @@ nav, a, button {
  */
 [layout] {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex; }
 
 [layout="horizontal"],
 [layout="row"] {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  flex-direction: row; }
 
 [layout="vertical"],
 [layout="column"] {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  flex-direction: column; }
 
 [layout-align="space-around"] {
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  justify-content: space-around; }
 
 [layout-align="space-between"] {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  justify-content: space-between; }
 
 [layout-align="center"] {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  justify-content: center; }
 
 [layout-align="start"] {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
+  justify-content: flex-start; }
 
 [layout-align="end"] {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  justify-content: flex-end; }
 
 html,
 body,
@@ -165,19 +140,33 @@ body,
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #fdc158; }
-
-.input-container {
-  margin: 1em auto;
-  padding: 0.6em 1em;
-  background-color: #c79f6b; }
+  background-color: #d4eaf7;
+  font-size: 16px; }
 
 .worker-result {
+  text-align: center;
   font-size: 2em;
   color: #2300a3; }
 
 .content-wrapper {
-  padding: 0.3em 0.8em; }
+  padding: 0.3em 0.8em;
+  max-width: 95%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .content-wrapper.input {
+    margin: 1em auto;
+    height: 12em;
+    background-color: #a7a4f9; }
+  .content-wrapper.result {
+    margin: 1em auto; }
+
+.input-container {
+  padding: 1em 0; }
+  .input-container label {
+    display: block; }
 
 /* ==========================================================================
    Helper classes
@@ -252,7 +241,7 @@ body,
    ========================================================================== */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.

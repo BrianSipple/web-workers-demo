@@ -124,15 +124,13 @@ body,
     margin: 0;
     padding: 0;
     background-color: $background-color_secondary__page;
+    font-size: $font-size_root;
 }
 
-.input-container {
-    margin: 1em auto;
-    padding: 0.6em 1em;
-    background-color: hsla(34, 45%, 60%, 1.00);
-}
+
 
 .worker-result {
+    text-align: center;
     font-size: 2em;
     color: hsla(253, 100%, 32%, 1);
 }
@@ -140,6 +138,29 @@ body,
 
 .content-wrapper {
     padding: $padding-wrapper_default;
+    max-width: 95%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.input {
+        margin: 1em auto;
+        height: 12em;
+        background-color: $background-color_secondary__content;
+    }
+
+    &.result {
+        margin: 1em auto;
+    }
+}
+
+.input-container {
+    label {
+        display: block;
+    }
+    padding: 1em 0;
 }
 
 
