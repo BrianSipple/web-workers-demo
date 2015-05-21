@@ -1,0 +1,69 @@
+$font-family-stack: Roboto, Arial, Helvetica, sans-serif;
+$font-size_root: 16px;
+
+
+
+/* ---------------------- Theme colors ---------------------- */
+$theme-color_primary__main: hsla(60, 29%, 96%, 1);
+$theme-color_primary__alternate: hsla(200, 18%, 46%, 1);
+
+$theme-color_accent__main: hsla(34, 100%, 50%, 1);
+$theme-color_accent__alternate: hsla(186, 100%, 50%, 1);
+
+
+
+
+
+
+$background-color_primary__page: hsla(0, 0%, 96%, 1);
+$background-color_primary__content: hsla(0, 100%, 100%, 1);
+
+$background-color_secondary__page: hsla(38, 98%, 67%, 1);
+
+
+$padding-wrapper_default: .3em .8em;
+
+
+
+
+
+/* ----------------------- Font colors and sizes ---------------------- */
+$font-size_md: 16px;
+
+/* White text on dark backgrounds */
+$font-color-white_dark-background__primary-text: hsla(0, 100%, 100%, 1);
+$font-color-white_dark-background__icon: hsla(0, 100%, 100%, 1);
+$font-color-white_dark-background__button: hsla(0, 100%, 100%, 1);
+$font-color-white_dark-background__secondary-text: hsla(0, 100%, 100%, .70);
+$font-color-white_dark-background__disabled: hsla(0, 100%, 100%, .30);
+$font-color-white_dark-background__hint-text: hsla(0, 100%, 100%, .30);
+$font-color-white_dark-background__divider: hsla(0, 100%, 100%, .12);
+
+/* Dark text on light backgrounds */
+$font-color-black_light-background__primary-text: hsla(0, 0%, 0%, .87);
+$font-color-black_light-background__secondary-text: hsla(0, 0%, 0%, .54);
+$font-color-black_light-background__icon: hsla(0, 0%, 0%, .54);
+$font-color-black_light-background__button: hsla(0, 0%, 0%, .54);
+$font-color-black_light-background__disabled: hsla(0, 0%, 0%, .26);
+$font-color-black_light-background__hint-text: hsla(0, 0%, 0%, .26);
+$font-color-black_light-background__divider: hsla(0, 0%, 0%, .12);
+
+$font-color-default: $font-color-black_light-background__primary-text;
+
+
+
+
+
+/**
+ * Use with every animation and transition so we can have a
+ * global animation speed toggler (i.e., for visual UI testing)
+ */
+$animation-duration-multiplier: 1s;
+
+
+
+$navbar-height: 64px;
+$footer-height: 64px;
+
+
+
